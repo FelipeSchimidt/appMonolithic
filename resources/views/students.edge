@@ -1,0 +1,8 @@
+<h1>Alunos Agape</h1>
+
+<ul>
+  @each(student in data.rows)
+    <li> {{ $loop.index + 1 }} - {{student.nome}}</li>
+  @endeach
+</ul>
+
