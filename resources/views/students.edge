@@ -2,7 +2,7 @@
 
 <ul>
   @each(student in data.rows)
-    <li> {{ $loop.index + 1 }} - {{student.nome}}</li>
+    <li> {{ $loop.index + 1 }} - {{ upperCase('student.nome') }}}}</li>
   @endeach
 </ul>
 
